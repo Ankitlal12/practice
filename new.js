@@ -72,8 +72,8 @@ console.log(w)
 const q=users.map((element)=>{
     return element.firstName.toUpperCase() + " " +element.lastname.toLowerCase() + "  ";
 }).join(" ")
-console.log(q)
+console.log(q + "123")
 
 
-=======
-====const processData=((data)=>let)
+
+const processData=((data)=>let)
