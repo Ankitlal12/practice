@@ -14,6 +14,11 @@ test2.forEach(num => {
 
 console.log(duplicates); 
 
+const r= aiad[1,2,4,5,6]
+const  wi= aiad.map((element)=>{
+    return element.toString(2);
+})
+console.log(wi)
 
 const test=[1,2,3,4]
 const w=test.map(num=>num+3);
