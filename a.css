@@ -1,0 +1,220 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Header styles */
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+#header img {
+  height: 40px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+/* Add spacing under fixed header */
+main {
+  padding-top: 90px;
+}
+
+/* Hero section */
+#hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #f0f0f0;
+}
+
+#hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#form {
+  margin-top: 1.5rem;
+}
+
+#email {
+  padding: 0.5rem;
+  width: 250px;
+  max-width: 90%;
+  margin-bottom: 0.5rem;
+}
+
+#submit {
+  padding: 0.5rem 1.2rem;
+  background-color: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #555;
+}
+
+/* Features section */
+#features {
+  background-color: #fff;
+  padding: 3rem 1rem;
+}
+
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Video section */
+#how-it-works {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #eaeaea;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+  margin-top: 1rem;
+}
+
+/* Pricing section */
+#pricing {
+  background: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background: #fdfdfd;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.card input[type="submit"] {
+  margin-top: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card input[type="submit"]:hover {
+  background-color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #ddd;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+
+  .feature-container,
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero h1 {
+    font-size: 1.5rem;
+  }
+
+  #email {
+    width: 90%;
+  }
+}
+
+
+
+
