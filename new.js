@@ -3,7 +3,7 @@ const x=arr.map(element=>element*2);
 console.log(x)
 
 const y=x.map(element=>element**2);
-console.log(y + "hi")
+console.log(y)
 
 const binary=arr.map(element=>element.toString(2))
 console.log(binary)
@@ -75,4 +75,5 @@ const q=users.map((element)=>{
 console.log(q)
 
 
-
+=======
+====const processData=((data)=>let)
