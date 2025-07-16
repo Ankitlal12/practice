@@ -3,7 +3,7 @@ const x=arr.map(element=>element*2);
 console.log(x)
 
 const y=x.map(element=>element**2);
-console.log(y)
+console.log(y + "hi")
 
 const binary=arr.map(element=>element.toString(2))
 console.log(binary)
