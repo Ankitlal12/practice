@@ -77,3 +77,5 @@ console.log(q)
 
 
 const processData=((data)=>let)
+
+const message = "Hi";
