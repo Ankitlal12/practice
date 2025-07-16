@@ -72,7 +72,7 @@ console.log(w)
 const q=users.map((element)=>{
     return element.firstName.toUpperCase() + " " +element.lastname.toLowerCase() + "  ";
 }).join(" ")
-console.log(q + "123")
+console.log(q)
 
 
 
