@@ -1,31 +1,17 @@
-// function combine(input1:any,input2:any){
+function add(n1:number,n2:number):number  {
+    return n1+n2;
+} 
 
-// const result=input1+input2;
-// return result;
-//   }
-// const combinedAges=combine(26,30);
-// console.log(combinedAges);
+function printResult(num:number):void{
+    console.log('result :'+ num);
+}
 
-// const combinedNames=combine('MAX','ANNA');
-// console.log(combinedNames)
+printResult(add(5,13));
 
-function combine(input1:number|string,input2:number|string,resultConversion:string){
-    let result;
-if(typeof input1==='number'&&typeof input2==='number'){
- result=input1+input2;}else{
-    result=input1.toString() + input2.toString()
- }
- if(resultConversion==='Hello  Kitty'){
-return +result;}  
-  else{
-    return result.toString()
-  }}
-const combinedAges=combine(26,30,'Hello kitty');
-console.log(combinedAges);
+let combineValues:(a:number,b:number)=> number;
 
-const combinedStringAges=combine('26','30','Hell kitty');
-console.log(combinedStringAges)
-
-
-const combinedNames=combine('MAX','ANNA','hello kittu');
-console.log(combinedNames)
+combineValues=add;
+//combineValues=printResult;
+//combineValues=5;
+console.log(combineValues(8,8));
+//let someValue:undefined;
