@@ -1,18 +1,26 @@
-const person={
-    name:'John Cena',
-    age:30,
-    hobbies:['cooking','playing'],
-    role:[2,'author']
-};
-person.hobbies.push('writing','sleeping')
-person.role.push('admin');
-person.role[1]=10;
-person.role.push('book')
+// function combine(input1:any,input2:any){
 
-let favouriteActivities:string[];
-favouriteActivities=['Sports'];
-console.log(person.name,person.hobbies,person.age,person.role)
+// const result=input1+input2;
+// return result;
+//   }
+// const combinedAges=combine(26,30);
+// console.log(combinedAges);
 
-for(const hobby of person.hobbies){
-    console.log(hobby.toUpperCase());
-}
+// const combinedNames=combine('MAX','ANNA');
+// console.log(combinedNames)
+
+function combine(input1:number|string,input2:number|string){
+    let result;
+if(typeof input1==='number'&&typeof input2==='number'){
+
+
+ result=input1+input2;}else{
+    result=input1.toString() + input2.toString()
+ }
+return result;
+  }
+const combinedAges=combine(26,30);
+console.log(combinedAges);
+
+const combinedNames=combine('MAX','ANNA');
+console.log(combinedNames)
